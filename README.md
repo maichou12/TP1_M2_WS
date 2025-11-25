@@ -26,8 +26,13 @@ Le projet est composé de plusieurs microservices :
 
 ## 🎥 Démonstration Vidéo
 
+Une vidéo de démonstration est disponible dans le dossier `video/` :
+- **Fichier** : `video/ms1_ms2_avec_gateway_success.mp4`
+- **Image** : `video/image.png`
 
-**VIDEO** : Voir dans le dossier video
+> **Note** : Pour intégrer la vidéo dans le README GitHub, vous pouvez :
+> - Utiliser un lien direct vers la vidéo si elle est hébergée en ligne
+> - Utiliser une image cliquable : `[![Vidéo](video/image.png)](video/ms1_ms2_avec_gateway_success.mp4)`
 
 
 ## 🚀 Démarrage Rapide
@@ -268,6 +273,17 @@ Ce projet est un projet académique développé dans le cadre du Master 2 GL.
 ## 📞 Support
 
 Pour toute question ou problème, veuillez ouvrir une issue sur le dépôt GitHub.
+
+## 🔗 Repository GitHub
+
+**Repository** : [https://github.com/maichou12/TP1_M2_WS](https://github.com/maichou12/TP1_M2_WS)
+
+Ce dépôt contient l'ensemble de l'architecture microservices :
+- ✅ Gateway (API Gateway)
+- ✅ MS1 (Services SOAP)
+- ✅ MS2 (Microservice secondaire)
+- ✅ Documentation complète
+- ✅ Vidéo de démonstration
 
 ---
 
