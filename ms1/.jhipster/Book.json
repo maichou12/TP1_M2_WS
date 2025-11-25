@@ -1,0 +1,35 @@
+{
+  "annotations": {
+    "changelogDate": "20251106191447"
+  },
+  "clientRootFolder": "ms1",
+  "databaseType": "sql",
+  "fields": [
+    {
+      "fieldName": "title",
+      "fieldType": "String",
+      "fieldValidateRules": []
+    },
+    {
+      "fieldName": "prix",
+      "fieldType": "Double",
+      "fieldValidateRules": []
+    },
+    {
+      "fieldName": "author",
+      "fieldType": "String",
+      "fieldValidateRules": []
+    },
+    {
+      "fieldName": "date_pub",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "microserviceName": "ms1",
+  "name": "Book",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "no"
+}

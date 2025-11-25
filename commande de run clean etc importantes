@@ -1,0 +1,13 @@
+
+// clean install sans tests
+
+./mvnw clean install -DskipTests -DskipITs
+
+// run (build ) sans tests
+
+./mvnw spring-boot:run -DskipTests
+
+// compile sans tests
+
+./mvnw compile -DskipTests
+
