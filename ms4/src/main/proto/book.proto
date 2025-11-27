@@ -1,0 +1,78 @@
+syntax = "proto3";
+
+package com.groupeisi.m2gl.grpc;
+
+option java_multiple_files = true;
+option java_package = "com.groupeisi.m2gl.grpc";
+option java_outer_classname = "BookProto";
+
+// Service de gestion des livres
+service BookService {
+  // Récupérer un livre par son ID
+  rpc GetBook(GetBookRequest) returns (BookResponse);
+  
+  // Récupérer tous les livres
+  rpc GetAllBooks(GetAllBooksRequest) returns (GetAllBooksResponse);
+  
+  // Créer un nouveau livre
+  rpc CreateBook(CreateBookRequest) returns (BookResponse);
+  
+  // Mettre à jour un livre
+  rpc UpdateBook(UpdateBookRequest) returns (BookResponse);
+  
+  // Supprimer un livre
+  rpc DeleteBook(DeleteBookRequest) returns (DeleteBookResponse);
+}
+
+// Message pour une requête de récupération d'un livre
+message GetBookRequest {
+  int64 id = 1;
+}
+
+// Message pour une requête de récupération de tous les livres
+message GetAllBooksRequest {
+  // Vide pour l'instant, peut être étendu plus tard
+}
+
+// Message pour une requête de création d'un livre
+message CreateBookRequest {
+  string title = 1;
+  double prix = 2;
+  string author = 3;
+  string date_pub = 4; // Format ISO: YYYY-MM-DD
+}
+
+// Message pour une requête de mise à jour d'un livre
+message UpdateBookRequest {
+  int64 id = 1;
+  string title = 2;
+  double prix = 3;
+  string author = 4;
+  string date_pub = 5; // Format ISO: YYYY-MM-DD
+}
+
+// Message pour une requête de suppression d'un livre
+message DeleteBookRequest {
+  int64 id = 1;
+}
+
+// Message de réponse pour un livre
+message BookResponse {
+  int64 id = 1;
+  string title = 2;
+  double prix = 3;
+  string author = 4;
+  string date_pub = 5; // Format ISO: YYYY-MM-DD
+}
+
+// Message de réponse pour tous les livres
+message GetAllBooksResponse {
+  repeated BookResponse books = 1;
+}
+
+// Message de réponse pour la suppression
+message DeleteBookResponse {
+  bool success = 1;
+  string message = 2;
+}
+
